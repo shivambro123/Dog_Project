@@ -63,10 +63,10 @@ const HomePage = () => {
           {(!inputval) ? <Button
             variant="outline-primary"
             disabled
-            >Enter Amount</Button> : <Button
+            >Enter Amount</Button> : (data.total > 2000 ) ? null :  <Button
           variant="outline-primary"
           onClick={() => bidHandler(data, inputval)}
-        > Let's Bid </Button>} 
+        > Let's Bid </Button>}
             
          {" "}
         </div>
