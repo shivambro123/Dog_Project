@@ -1,0 +1,49 @@
+.wrapper {
+    height: 60vh;
+    width: 100%;
+}
+
+.dog-size {
+    height: 50vh;
+    width: 100%;
+    max-width: 50%;
+    margin: auto;
+}
+
+.dog {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+
+}
+
+.inputdiv {
+    border: 1px solid white;
+    height: 35px;
+    background: transparent;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-div input{
+    color:#fff;
+    border: 2px solid #fff;
+}
+.button-div input::placeholder{
+    color:white;
+}
+
+@media screen and (max-width:480px){
+    .dog-size{
+        max-width: 100%;
+    }
+    .inputdiv{
+        padding: 5px 0;
+    }
+}
