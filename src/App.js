@@ -14,6 +14,7 @@ function App() {
        <NavbarComponent/>
         <Routes>
           <Route path="/" element={<HomePage/>}/>
+          <Route path="/Dog_Project/" element={<HomePage/>}/>
         </Routes>
       </Router>
       </ContextComp>
