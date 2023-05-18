@@ -46,8 +46,7 @@ const HomePage = () => {
             </Button>{" "}
           </div>
           <div className="dog-size">
-            <img src={data?.message} 
-            className="dog" 
+            <img src={data?.message} className="dog" 
             alt="image" />
           </div>
         </div>
@@ -63,10 +62,10 @@ const HomePage = () => {
           {(!inputval) ? <Button
             variant="outline-primary"
             disabled
-            >Enter Amount</Button> : (data.total > 2000 ) ? "Cart Value is Full" :  <Button
+            >Enter Amount</Button> : <Button
           variant="outline-primary"
           onClick={() => bidHandler(data, inputval)}
-        > Let's Bid </Button>}
+        > Let's Bid </Button>} 
             
          {" "}
         </div>
