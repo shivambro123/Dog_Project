@@ -63,7 +63,7 @@ const HomePage = () => {
           {(!inputval) ? <Button
             variant="outline-primary"
             disabled
-            >Enter Amount</Button> : (data.total > 2000 ) ? null :  <Button
+            >Enter Amount</Button> : (data.total > 2000 ) ? "Cart Value is Full" :  <Button
           variant="outline-primary"
           onClick={() => bidHandler(data, inputval)}
         > Let's Bid </Button>}
