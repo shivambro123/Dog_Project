@@ -1,10 +1,6 @@
 import { useContext,useEffect,useState } from 'react';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { DataContext } from './ContextComp';
 import { useSelector } from 'react-redux';
@@ -12,7 +8,7 @@ import './NavbarCompcss.css'
 import CartComp from './CartComp';
 
 function NavbarComponent() {
-  const {state,dispatch} = useContext(DataContext)
+  const {state} = useContext(DataContext)
   const data = useSelector((state) => state.dog);
   console.log("nav", data);
   console.log(state.statevalue)
