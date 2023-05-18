@@ -53,7 +53,7 @@ const HomePage = () => {
         <div className="button-div">
           <input
             type="text"
-            className="mx-3 inputdiv"
+            className="mx-3 px-1 inputdiv"
             placeholder="Enter Amount in $"
             value={inputval}
             onChange={changeHandler}
