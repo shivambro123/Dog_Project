@@ -8,7 +8,6 @@ import { DataContext } from "./ContextComp";
 const HomePage = () => {
   const { state, dispatch } = useContext(DataContext);
   const [inputval, setInputval] = useState("");
-  console.log("home", state);
   const data = useSelector((state) => state.dog.data);
   console.log(data);
   const dispatchs = useDispatch();
@@ -57,7 +56,7 @@ const HomePage = () => {
             placeholder="Enter Amount in $"
             value={inputval}
             onChange={changeHandler}
-          />
+          />  
      
           {(!inputval) ? <Button
             variant="outline-primary"

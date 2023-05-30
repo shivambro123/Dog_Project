@@ -35,7 +35,7 @@ const CartComp = ({ image, val, price }) => {
     </div>
     </div>
     <div className="totalprice">
-    <h2>Total: {data.total} &#36;</h2>
+    <h2>Total: {data.total.toLocaleString()} &#36;</h2>
     </div>
     </>
   );
